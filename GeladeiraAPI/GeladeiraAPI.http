@@ -1,0 +1,6 @@
+@GeladeiraAPI_HostAddress = http://localhost:5162
+
+GET {{GeladeiraAPI_HostAddress}}/geladeira/
+Accept: application/json
+
+###

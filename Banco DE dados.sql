@@ -1,0 +1,3 @@
+SELECT * FROM Items
+
+DELETE * FROM Items
