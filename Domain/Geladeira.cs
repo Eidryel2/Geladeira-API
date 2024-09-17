@@ -20,8 +20,8 @@ namespace Domain
             Itens = new List<ItemDomain>();
         }
 
+      
 
-        
         public string Localizacao(ItemDomain item)
         {
             foreach (var andar in Andares)

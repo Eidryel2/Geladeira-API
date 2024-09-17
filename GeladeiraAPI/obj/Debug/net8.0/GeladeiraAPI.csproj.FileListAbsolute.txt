@@ -140,3 +140,4 @@ C:\Users\adrie\source\repos\APIGeladeira\GeladeiraAPI\bin\Debug\net8.0\Repositor
 C:\Users\adrie\source\repos\APIGeladeira\GeladeiraAPI\bin\Debug\net8.0\Service.dll
 C:\Users\adrie\source\repos\APIGeladeira\GeladeiraAPI\bin\Debug\net8.0\Service.pdb
 C:\Users\adrie\source\repos\APIGeladeira\GeladeiraAPI\obj\Debug\net8.0\GeladeiraAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\adrie\source\repos\APIGeladeira\GeladeiraAPI\obj\Debug\net8.0\GeladeiraAPI.sourcelink.json

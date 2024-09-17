@@ -12,3 +12,4 @@ C:\Users\adrie\source\repos\APIGeladeira\Domain\obj\Debug\net8.0\ref\Domain.dll
 C:\Users\adrie\source\repos\APIGeladeira\Domain\bin\Debug\net8.0\Domain.runtimeconfig.json
 C:\Users\adrie\source\repos\APIGeladeira\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
 C:\Users\adrie\source\repos\APIGeladeira\Domain\obj\Debug\net8.0\Domain.genruntimeconfig.cache
+C:\Users\adrie\source\repos\APIGeladeira\Domain\obj\Debug\net8.0\Domain.sourcelink.json

@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\adrie\\source\\repos\\APIGeladeira\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{835DB820-E8CD-43DB-8306-949A9C963EF8}|Domain\\Domain.csproj|c:\\users\\adrie\\source\\repos\\apigeladeira\\domain\\geladeira.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{835DB820-E8CD-43DB-8306-949A9C963EF8}|Domain\\Domain.csproj|solutionrelative:domain\\geladeira.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5E77534F-95F2-4AA9-B2BB-A0DDF084DB98}|GeladeiraAPI\\GeladeiraAPI.csproj|c:\\users\\adrie\\source\\repos\\apigeladeira\\geladeiraapi\\controllers\\gelacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E77534F-95F2-4AA9-B2BB-A0DDF084DB98}|GeladeiraAPI\\GeladeiraAPI.csproj|solutionrelative:geladeiraapi\\controllers\\gelacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{835DB820-E8CD-43DB-8306-949A9C963EF8}|Domain\\Domain.csproj|c:\\users\\adrie\\source\\repos\\apigeladeira\\domain\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{835DB820-E8CD-43DB-8306-949A9C963EF8}|Domain\\Domain.csproj|solutionrelative:domain\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,26 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\adrie\\source\\repos\\APIGeladeira\\Domain\\Item.cs",
+              "RelativeDocumentMoniker": "Domain\\Item.cs",
+              "ToolTip": "C:\\Users\\adrie\\source\\repos\\APIGeladeira\\Domain\\Item.cs",
+              "RelativeToolTip": "Domain\\Item.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwB8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T21:13:31.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "gelaController.cs",
               "DocumentMoniker": "C:\\Users\\adrie\\source\\repos\\APIGeladeira\\GeladeiraAPI\\Controllers\\gelaController.cs",
               "RelativeDocumentMoniker": "GeladeiraAPI\\Controllers\\gelaController.cs",
               "ToolTip": "C:\\Users\\adrie\\source\\repos\\APIGeladeira\\GeladeiraAPI\\Controllers\\gelaController.cs",
               "RelativeToolTip": "GeladeiraAPI\\Controllers\\gelaController.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAADUAAAA0AAAA",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAiwI0AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T20:11:18.722Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Geladeira.cs",
-              "DocumentMoniker": "C:\\Users\\adrie\\source\\repos\\APIGeladeira\\Domain\\Geladeira.cs",
-              "RelativeDocumentMoniker": "Domain\\Geladeira.cs",
-              "ToolTip": "C:\\Users\\adrie\\source\\repos\\APIGeladeira\\Domain\\Geladeira.cs",
-              "RelativeToolTip": "Domain\\Geladeira.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T19:50:34.754Z",
+              "WhenOpened": "2024-09-15T20:11:18.722Z",
               "EditorCaption": ""
             }
           ]

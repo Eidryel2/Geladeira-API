@@ -9,5 +9,6 @@ namespace Service.Interfaces
         T GetItem(int id);
         void DeleteItem(int id);
         List<T> GetAllItems();
+        List<T> LocalizarItems(string localizacao);
     }
 }

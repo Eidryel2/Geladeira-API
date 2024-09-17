@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Service.Interfaces;
 using Repository.Models;
+using System.Linq;
 
 namespace Service.ServicesClasses
 {
@@ -78,8 +79,31 @@ namespace Service.ServicesClasses
                 .Select(i => new ItemDomain
                 {
                     Nome = i.Nome,
-                    Id = i.Id
-                    // Mapear outras propriedades conforme necessário
+                    Id = i.Id,
+                    Andar = i.Andar,
+                    Container = i.Container,
+                    Posicao = i.Posicao
+                    
+                })
+                .ToList();
+        }
+        private string Localizacao(ItemDomain item)
+        {
+            // Implement the logic to determine the localizacao of the item
+            // For example:
+            return $"{item.Andar}-{item.Container}-{item.Posicao}";
+        }
+        public List<ItemDomain> LocalizarItems(string localizacao)
+        {
+            return _repository.GetAllItems()
+                .Where(i => Localizacao(i) == localizacao)
+                .Select(i => new ItemDomain
+                {
+                    Nome = i.Nome,
+                    Id = i.Id,
+                    Andar = i.Andar,
+                    Container = i.Container,
+                    Posicao = i.Posicao
                 })
                 .ToList();
         }

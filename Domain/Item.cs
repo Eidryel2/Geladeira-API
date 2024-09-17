@@ -30,5 +30,10 @@ namespace Domain
         {
             return $"{Nome} (ID: {Id})";
         }
+        public class ItemUpdateDomain
+        {
+            public int Id { get; set; }
+            public string Nome { get; set; }
+        }
     }
 }
