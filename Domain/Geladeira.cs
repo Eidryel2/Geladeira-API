@@ -6,8 +6,8 @@ namespace Domain
 {
     public class Geladeira
     {
-        public List<Andar> Andares { get; private set; }
-        public List<ItemDomain> Itens { get; private set; }
+        public List<Andar> Andares { get; set; }
+        public List<ItemDomain> Itens { get;  set; }
 
         public Geladeira()
         {
@@ -40,16 +40,18 @@ namespace Domain
             return $"Item '{item.Nome}' não encontrado";
         }
 
-       
+
 
         public void AtualizarItem(int id, ItemDomain newItem)
         {
             ItemDomain existingItem = GetItemById(id);
             if (existingItem != null)
             {
-               
-                existingItem.Nome = newItem.Nome;
-                
+              
+                Itens.Remove(existingItem);
+
+          
+                Itens.Add(newItem);
             }
             else
             {
@@ -70,7 +72,11 @@ namespace Domain
         //post
         public void AdicionarItem(int andarIndex, int containerIndex, int posicaoIndex, ItemDomain item)
         {
-       
+            if (Itens == null)
+            {
+                Itens = new List<ItemDomain>();
+            }
+
             if (andarIndex < 0 || andarIndex >= Andares.Count)
                 throw new ArgumentException("Andar inválido.");
 
@@ -82,20 +88,13 @@ namespace Domain
             if (posicaoIndex < 0 || posicaoIndex >= container.Posicoes.Count)
                 throw new ArgumentException("Posição inválida.");
 
-            var posicao = container.Posicoes[posicaoIndex];
-
-           
-            if (posicao != null)
-            {
-                
-                Console.WriteLine($"A posição {posicaoIndex} já está ocupada com o item '{posicao.Item.Nome}'.");
-                return; 
-            }
-
           
-            container.AdicionarItem(posicaoIndex, item);
-            Itens.Add(item);
-            Console.WriteLine($"Item '{item.Nome}' adicionado ao andar {andarIndex}, container {containerIndex}, posição {posicaoIndex}.");
+            
+                container.AdicionarItem(posicaoIndex, item);
+                Itens.Add(item);
+                Console.WriteLine($"Item '{item.Nome}' adicionado ao andar {andarIndex}, container {containerIndex}, posição {posicaoIndex}.");
+            
+            
         }
 
 
@@ -105,17 +104,21 @@ namespace Domain
             return Itens.FirstOrDefault(i => i.Id == id);
         }
 
-       
-        public void RemoverItem(int andar, int container, int posicao)
+
+        public void RemoverItem(int itemId)
         {
-            try
+            var item = Itens.FirstOrDefault(i => i.Id == itemId);
+
+            if (item == null)
             {
-                Andares[andar].Containers[container].RemoverItem(posicao);
-                Console.WriteLine($"Item removido do andar {andar}, container {container}, posição {posicao}.");
+                Console.WriteLine("Item não encontrado.");
             }
-            catch (Exception e)
+            else
             {
-                Console.WriteLine(e.Message);
+                Itens.Remove(item);
+
+                var container = Andares[0].Containers[0];
+                container.Posicoes[0] = null;
             }
         }
 

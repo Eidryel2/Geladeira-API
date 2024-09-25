@@ -56,7 +56,7 @@ namespace Domain
     }
     public class Container
     {
-        public List<Posicao> Posicoes { get; private set; }
+        public List<Posicao> Posicoes { get; set; }
         public List<ItemDomain> Itens { get; set; }
 
         public Container()
