@@ -37,6 +37,6 @@ Bem-vindo ao projeto **Geladeira API**! Esta é uma API desenvolvida com **Entit
      ```
 
 
-     // Atividade feita por Adrielly e Aline 
+     // Atividade feita por Adrielly, Aline e Caroline  
 
 
